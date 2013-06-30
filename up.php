@@ -19,9 +19,14 @@ if ($json_post)
 
 $json = json_decode($json_str);
 
+/*
 if (strlen($json["id"]) == 16) {
   print("has an id");
 }
+*/
+print $json["id"]
+print $json["stamp"]
+print $json["light"]
 
 print $json_str;
 
