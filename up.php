@@ -22,6 +22,8 @@ $json = json_decode($json_str);
 print $json_get;
 print $json_str;
 
+print $json
+
 print $json["id"];
 print $json["stamp"];
 print $json["light"];
