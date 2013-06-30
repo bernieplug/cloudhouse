@@ -14,7 +14,7 @@ $(document).ready(function() {
     }); 
 });
 
-function onJSON(model) {
+function onJSON(data) {
   var output = Mustache.render("<h2>Live Variables</h2><p>Tempature: {{temperature}} C</p><p>Humidity: {{humidity}}</p><p>Light: {{light}}</p><p> Moisture: {{moisture}}</p>", data);
   document.getElementById('realtime').innerHTML = output;
 }
