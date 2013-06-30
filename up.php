@@ -17,7 +17,7 @@ if ($json_post)
  $json = $json_post;
 }
 
-if ((strlen($json["id"] > 5) and (strlen($json["id") < 16)) {
+if ((strlen($json["id"] > 5) and (strlen($json["id"] < 16)) {
   print("has an id");
 }
 
