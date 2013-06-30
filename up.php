@@ -17,12 +17,12 @@ if ($json_post)
  $json_str = $json_post;
 }
 
-$json = json_decode($json_str);
+$json = json_decode($json_str,true);
 
-print "json_str:\n";
+print "json_str:<br/>";
 print $json_str;
 
-print "<br/><br/>decoded json object:\n";
+print "<br/><br/>decoded json object:<br/>";
 var_dump($json);
 
 print "<br/><br/>last error:<br/>";
