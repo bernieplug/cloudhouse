@@ -18,19 +18,21 @@ if ($json_post)
 }
 
 $json = json_decode($json_str);
-echo 'Last error: ', $json_errors[json_last_error()], PHP_EOL, PHP_EOL;
 
 print "json_str:\n";
 print $json_str;
 
-print "decoded json object:\n";
+print "<br/><br/>decoded json object:\n";
 var_dump($json);
 
-print "decoded id:\n";
+print "<br/><br/>last error:<br/>";
+print $json_errors[json_last_error()];
+
+print "<br/><br/>decoded id:<br/>";
 print $json["id"];
-print "decoded stamp:\n";
+print "<br/><br/>decoded stamp:<br/>";
 print $json["stamp"];
-print "decoded light:\n";
+print "<br/><br/>decoded light:<br/>";
 print $json["light"];
 
 ?>
