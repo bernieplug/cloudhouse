@@ -10,19 +10,19 @@
 
 $json_get = $_GET["json"];
 $json_post = $_POST["json"];
-$json = $json_get;
+$json_str = $json_get;
 
 if ($json_post)
 {
- $json = $json_post;
+ $json_str = $json_post;
 }
 
-if ((strlen($json["id"]) > 5) and (strlen($json["id"]) < 16)) {
+$json = json_decode($json_str)
+
+if ((strlen($json["id"]) == 16)) {
   print("has an id");
 }
 
-var_dump(json_decode($json));
-
-phpinfo();
+print $json_str
 
 ?>
