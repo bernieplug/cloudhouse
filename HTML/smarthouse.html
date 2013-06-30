@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html>
 <head>
 <title> Cloudhouse </title>
 <link rel="stylesheet" type="text/css" href="main-style.css"> 
 <link rel="stylesheet" type="text/css" href="smarthouse.css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
- <script type="text/javascript" src="mustache.js" ></script>
+<script type="text/javascript" src="mustache.js" ></script>
 <script>
 
 $(document).ready(function() {
@@ -21,17 +20,7 @@ function onJSON(model) {
 }
 
 </script>
- 
-    <script>
-      var view = {
-        name : "Joe",
-        occupation : "Web Developer"
-      };
-      function loadtemp(){
-        var output = Mustache.render("{{name}} is a  {{occupation}}", view);
-        document.getElementById('person').innerHTML = output;
-      }
-    </script>
+
 </head>
 <body>
 <div id="center"> 
