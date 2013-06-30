@@ -19,13 +19,20 @@ if ($json_post)
 
 $json = json_decode($json_str);
 
+print "json_get:\n"
 print $json_get;
+
+print "json_str:\n"
 print $json_str;
 
+print "decoded json object:\n"
 print $json
 
+print "decoded id:\n"
 print $json["id"];
+print "decoded stamp:\n"
 print $json["stamp"];
+print "decoded light:\n"
 print $json["light"];
 
 print $json_str;
