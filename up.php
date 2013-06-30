@@ -25,8 +25,11 @@ print $json_str;
 print "<br/><br/>decoded json object:<br/>";
 var_dump($json);
 
+$dangerous = array(".", "\\", "!", "\/");
+$json["id"] = str_replace($dangerous, "", $json["id"]);
+
 if (($json != NULL) and ($json["id"] != NULL)) {
- file_put_contents($json["id"], $json_str);
+ file_put_contents($json["id"] ".json", $json_str);
 }
 
 print "<br/><br/>last error:<br/>";
