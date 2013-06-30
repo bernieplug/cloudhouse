@@ -8,6 +8,9 @@
 
 <?php
 
+print "_POST:<br/>";
+var_dump($_POST);
+
 $json_get = $_GET["json"];
 $json_post = $_POST["json"];
 $json_str = $json_get;
