@@ -18,7 +18,7 @@ if ($json_post)
 }
 
 $json = json_decode($json_str);
-print 'Last error: ', $json_errors[json_last_error()], PHP_EOL, PHP_EOL;
+echo 'Last error: ', $json_errors[json_last_error()], PHP_EOL, PHP_EOL;
 
 print "json_str:\n";
 print $json_str;
